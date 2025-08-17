@@ -1,0 +1,63 @@
+{
+    "info": {
+        "_postman_id": "6345927__6285",
+        "name": "Ship Position API",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Position Information",
+            "request": {
+                "auth": {
+                    "type": "bearer",
+                    "bearer": [
+                        {
+                            "key": "token",
+                            "value": "",
+                            "type": "string"
+                        }
+                    ]
+                },
+                "method": "GET",
+                "url": {
+                    "raw": "https://zylalabs.com/api/6285/ship+position+api/8887/position+information?imo=9175717&mmsi=304491000&extradata=optional&sat=optional&interval=optional",
+                    "protocol": "https",
+                    "host": [
+                        "zylalabs",
+                        "com"
+                    ],
+                    "path": [
+                        "api",
+                        "6285",
+                        "ship+position+api",
+                        "8887",
+                        "position+information"
+                    ],
+                    "query": [
+                        {
+                            "key": "imo",
+                            "value": "9175717"
+                        },
+                        {
+                            "key": "mmsi",
+                            "value": "304491000"
+                        },
+                        {
+                            "key": "extradata",
+                            "value": null
+                        },
+                        {
+                            "key": "sat",
+                            "value": null
+                        },
+                        {
+                            "key": "interval",
+                            "value": null
+                        }
+                    ]
+                }
+            },
+            "response": []
+        }
+    ]
+}

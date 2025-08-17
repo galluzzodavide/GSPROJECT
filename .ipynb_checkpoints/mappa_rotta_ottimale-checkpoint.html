@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_80302d9d87a59ea74368d9e6a2186f38 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_80302d9d87a59ea74368d9e6a2186f38" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_80302d9d87a59ea74368d9e6a2186f38 = L.map(
+                "map_80302d9d87a59ea74368d9e6a2186f38",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 1,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_41ed8e0389b3dd55933dc5ee2f31fe73 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_41ed8e0389b3dd55933dc5ee2f31fe73.addTo(map_80302d9d87a59ea74368d9e6a2186f38);
+        
+    
+            var poly_line_219acae4d001afa7116b8235b694c4f9 = L.polyline(
+                [[44.41, 8.93], [41.3902, 2.154], [43.296, 5.369]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 6}
+            ).addTo(map_80302d9d87a59ea74368d9e6a2186f38);
+        
+    
+            var marker_5959b859991b83b19bd14cfb0008caeb = L.marker(
+                [44.41, 8.93],
+                {
+}
+            ).addTo(map_80302d9d87a59ea74368d9e6a2186f38);
+        
+    
+            var icon_58a1c4aaba3731455fca61b59f8836a7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "play",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4c2948d94e21a79aefd4e3eb8ac22534 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1c266238455f1a75376065e7e6f332e3 = $(`<div id="html_1c266238455f1a75376065e7e6f332e3" style="width: 100.0%; height: 100.0%;">Partenza: Genova</div>`)[0];
+                popup_4c2948d94e21a79aefd4e3eb8ac22534.setContent(html_1c266238455f1a75376065e7e6f332e3);
+            
+        
+
+        marker_5959b859991b83b19bd14cfb0008caeb.bindPopup(popup_4c2948d94e21a79aefd4e3eb8ac22534)
+        ;
+
+        
+    
+    
+                marker_5959b859991b83b19bd14cfb0008caeb.setIcon(icon_58a1c4aaba3731455fca61b59f8836a7);
+            
+    
+            var marker_5e71958e078b9bb45d510d60f3c2bd5a = L.marker(
+                [41.3902, 2.154],
+                {
+}
+            ).addTo(map_80302d9d87a59ea74368d9e6a2186f38);
+        
+    
+            var icon_325fb13c0334aa2c25005b4cb0420572 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9fce395dbbe2f702053abd3e23c61973 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_81ee619e5de9f36f7a576281508b129e = $(`<div id="html_81ee619e5de9f36f7a576281508b129e" style="width: 100.0%; height: 100.0%;">Scalo: Barcellona</div>`)[0];
+                popup_9fce395dbbe2f702053abd3e23c61973.setContent(html_81ee619e5de9f36f7a576281508b129e);
+            
+        
+
+        marker_5e71958e078b9bb45d510d60f3c2bd5a.bindPopup(popup_9fce395dbbe2f702053abd3e23c61973)
+        ;
+
+        
+    
+    
+                marker_5e71958e078b9bb45d510d60f3c2bd5a.setIcon(icon_325fb13c0334aa2c25005b4cb0420572);
+            
+    
+            var marker_1b50463fb9338a41b1c719afcd186af1 = L.marker(
+                [43.296, 5.369],
+                {
+}
+            ).addTo(map_80302d9d87a59ea74368d9e6a2186f38);
+        
+    
+            var icon_5af2c0e21fe28f9c7fc3f71b5ce6c000 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2ebd53b099ac63df2703c49187d2d25b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_55e79924ee36cc76d42a60498173a15d = $(`<div id="html_55e79924ee36cc76d42a60498173a15d" style="width: 100.0%; height: 100.0%;">Arrivo: Marsiglia</div>`)[0];
+                popup_2ebd53b099ac63df2703c49187d2d25b.setContent(html_55e79924ee36cc76d42a60498173a15d);
+            
+        
+
+        marker_1b50463fb9338a41b1c719afcd186af1.bindPopup(popup_2ebd53b099ac63df2703c49187d2d25b)
+        ;
+
+        
+    
+    
+                marker_1b50463fb9338a41b1c719afcd186af1.setIcon(icon_5af2c0e21fe28f9c7fc3f71b5ce6c000);
+            
+    
+            var circle_marker_8822d83d718b4e8e4d53986ae04c845b = L.circleMarker(
+                [42.81955, 4.56525],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_80302d9d87a59ea74368d9e6a2186f38);
+        
+    
+        var popup_4b67d3392ca95d35660d4e25b2e1ae0a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_73c2d0b07b4d37a7fad31947e55645da = $(`<div id="html_73c2d0b07b4d37a7fad31947e55645da" style="width: 100.0%; height: 100.0%;">Punto critico:<br>Vento 13.7 km/h, Onda 0.7 m, Pioggia 0.0 mm/h</div>`)[0];
+                popup_4b67d3392ca95d35660d4e25b2e1ae0a.setContent(html_73c2d0b07b4d37a7fad31947e55645da);
+            
+        
+
+        circle_marker_8822d83d718b4e8e4d53986ae04c845b.bindPopup(popup_4b67d3392ca95d35660d4e25b2e1ae0a)
+        ;
+
+        
+    
+    
+            var poly_line_10e05e9fbdec036e3976610ebc4ba280 = L.polyline(
+                [[44.41, 8.93], [39.4699, -0.3763], [43.296, 5.369]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 6}
+            ).addTo(map_80302d9d87a59ea74368d9e6a2186f38);
+        
+    
+            var marker_50e3faccaf28d7a09b31776cf01673d2 = L.marker(
+                [44.41, 8.93],
+                {
+}
+            ).addTo(map_80302d9d87a59ea74368d9e6a2186f38);
+        
+    
+            var icon_7ae873cac1adc4e69b84c5e156f7c403 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "play",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_93c8e5f9f434093bfd29e01bb17a1627 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a35376d4406a41affffe1df55fb9f126 = $(`<div id="html_a35376d4406a41affffe1df55fb9f126" style="width: 100.0%; height: 100.0%;">Partenza: Genova</div>`)[0];
+                popup_93c8e5f9f434093bfd29e01bb17a1627.setContent(html_a35376d4406a41affffe1df55fb9f126);
+            
+        
+
+        marker_50e3faccaf28d7a09b31776cf01673d2.bindPopup(popup_93c8e5f9f434093bfd29e01bb17a1627)
+        ;
+
+        
+    
+    
+                marker_50e3faccaf28d7a09b31776cf01673d2.setIcon(icon_7ae873cac1adc4e69b84c5e156f7c403);
+            
+    
+            var marker_e86ceff86498c6a284a8e4082f523272 = L.marker(
+                [39.4699, -0.3763],
+                {
+}
+            ).addTo(map_80302d9d87a59ea74368d9e6a2186f38);
+        
+    
+            var icon_ca4032c36d867ae25beade534f5abbe4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_08beedab7e519bb57f4f27e212db987e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_04698ed429193345f059ec07f4d22548 = $(`<div id="html_04698ed429193345f059ec07f4d22548" style="width: 100.0%; height: 100.0%;">Scalo: Valencia</div>`)[0];
+                popup_08beedab7e519bb57f4f27e212db987e.setContent(html_04698ed429193345f059ec07f4d22548);
+            
+        
+
+        marker_e86ceff86498c6a284a8e4082f523272.bindPopup(popup_08beedab7e519bb57f4f27e212db987e)
+        ;
+
+        
+    
+    
+                marker_e86ceff86498c6a284a8e4082f523272.setIcon(icon_ca4032c36d867ae25beade534f5abbe4);
+            
+    
+            var marker_a5ca4aba71fb52a971aaea853e7c0892 = L.marker(
+                [43.296, 5.369],
+                {
+}
+            ).addTo(map_80302d9d87a59ea74368d9e6a2186f38);
+        
+    
+            var icon_029138652b39156dbefce94719350c03 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_18b01e792da3c670ffb077d3899f188d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3decb641cda4549c4754af1e1876e953 = $(`<div id="html_3decb641cda4549c4754af1e1876e953" style="width: 100.0%; height: 100.0%;">Arrivo: Marsiglia</div>`)[0];
+                popup_18b01e792da3c670ffb077d3899f188d.setContent(html_3decb641cda4549c4754af1e1876e953);
+            
+        
+
+        marker_a5ca4aba71fb52a971aaea853e7c0892.bindPopup(popup_18b01e792da3c670ffb077d3899f188d)
+        ;
+
+        
+    
+    
+                marker_a5ca4aba71fb52a971aaea853e7c0892.setIcon(icon_029138652b39156dbefce94719350c03);
+            
+    
+            var circle_marker_ea48d56d9ab93d61eab18936d1e6abb6 = L.circleMarker(
+                [42.339475, 3.9326749999999993],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_80302d9d87a59ea74368d9e6a2186f38);
+        
+    
+        var popup_7d47f40d8bb434845dce6acdd6e6be6f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fd3368af06de351422b213f5da53329c = $(`<div id="html_fd3368af06de351422b213f5da53329c" style="width: 100.0%; height: 100.0%;">Punto critico:<br>Vento 15.4 km/h, Onda 0.4 m, Pioggia 0.0 mm/h</div>`)[0];
+                popup_7d47f40d8bb434845dce6acdd6e6be6f.setContent(html_fd3368af06de351422b213f5da53329c);
+            
+        
+
+        circle_marker_ea48d56d9ab93d61eab18936d1e6abb6.bindPopup(popup_7d47f40d8bb434845dce6acdd6e6be6f)
+        ;
+
+        
+    
+</script>
+</html>
